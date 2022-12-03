@@ -5,7 +5,6 @@
 #define FALSE 0
 
 void getInput(int mat [N][N]){
-    int c = 0;
     for (int i = 0; i < N; i++)
     {
         for (int j = 0; j < N; j++)
