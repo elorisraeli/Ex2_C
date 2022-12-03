@@ -24,10 +24,12 @@ int main()
             if (answer == TRUE)
             {
                 printf("True");
+                printf("\n");
             }
             else
             {
                 printf("False");
+                printf("\n");
             }
         }
         if (input == 'C')
@@ -35,6 +37,7 @@ int main()
             scanf("%d %d", &i, &j);
             answer = short_path(i, j, mat);
             printf("%d", answer);
+            printf("\n");
         }
     }
     return 0;

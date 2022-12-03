@@ -5,13 +5,13 @@
 #define FALSE 0
 
 void getInput(int mat [N][N]){
+    int c = 0;
     for (int i = 0; i < N; i++)
     {
         for (int j = 0; j < N; j++)
         {
             scanf("%d",&mat[i][j]);
         }
-        
     }
     
 }
@@ -35,8 +35,6 @@ void floyd_warshall_algorithm(int mat [N][N])
         }
         
     }
-    
-
 }
 
 
@@ -47,7 +45,6 @@ int isExist(int i, int j, int mat [N][N])
         return TRUE;
     }
     return FALSE;
-
 }
 
 int short_path(int i, int j, int mat [N][N])
@@ -57,5 +54,4 @@ int short_path(int i, int j, int mat [N][N])
         return mat[i][j];
     }
     return -1;
-
 }
