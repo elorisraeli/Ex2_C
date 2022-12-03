@@ -6,39 +6,35 @@
 
 int main()
 {
-    int mat [N][N];
-    char input;
-    int i , j,answer;
-    scanf("%c", &input);
+    int mat[N][N];
+    char input = 'w'; // just not 'D'
+    int i, j, answer;
     while (input != 'D')
     {
+        scanf("%c", &input);
         if (input == 'A')
         {
             getInput(mat);
             floyd_warshall_algorithm(mat);
-
         }
         if (input == 'B')
         {
-            scanf("%d %d" ,&i, &j);
-            answer= isExist(i,j,mat);
-            if(answer==TRUE)
+            scanf("%d %d", &i, &j);
+            answer = isExist(i, j, mat);
+            if (answer == TRUE)
             {
                 printf("True");
             }
-            else{
+            else
+            {
                 printf("False");
             }
-
-
         }
         if (input == 'C')
         {
-            scanf("%d %d" ,&i, &j);
-            answer= short_path(i,j,mat);
-            printf("%d" ,answer);
-
-
+            scanf("%d %d", &i, &j);
+            answer = short_path(i, j, mat);
+            printf("%d", answer);
         }
     }
     return 0;
